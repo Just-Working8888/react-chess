@@ -1,0 +1,71 @@
+@import url(styles/fonts/index.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--white: #f3f3f3;
+	--navWhite: #ffffff;
+	--hover-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+a {
+	color: #007acc;
+}
+
+html,
+body {
+	min-width: calc(64px * 8 + 40px);
+
+	background-color: var(--white);
+	font-family: 'Montserrat-Light';
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+.layout {
+	max-width: 1000px;
+	margin: auto;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+main > *:last-child {
+	margin-bottom: 20px;
+}
+
+details {
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+summary {
+	text-align: center;
+	cursor: pointer;
+}
+
+.lost-figures {
+	display: flex;
+	flex-flow: row;
+
+	width: calc(64px * 8);
+	height: auto;
+	min-height: 100px;
+
+	margin: 10px 0 20px 0;
+}
+
+h2 {
+	font-family: 'Montserrat-Medium';
+	font-size: 1.2rem;
+}
+
+.flipped {
+	transform: rotateX(180deg);
+}

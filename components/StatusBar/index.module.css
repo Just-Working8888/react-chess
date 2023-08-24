@@ -1,0 +1,57 @@
+.currentPlayerStatus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+
+	font-weight: 600;
+}
+
+.flipper {
+	width: 80px;
+	height: 25px;
+
+	margin: 0 5px;
+	position: relative;
+	perspective: 400px;
+
+	font-size: 0.9rem;
+}
+
+.flipperObject {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+
+.flipperObject > * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+	position: absolute;
+	backface-visibility: hidden;
+
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.panelFront {
+	color: black;
+	background-color: #f9fcff;
+	background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+}
+
+.panelBack {
+	color: whitesmoke;
+	background-color: #000000;
+	background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+	transform: rotateX(180deg);
+}

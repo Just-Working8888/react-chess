@@ -1,0 +1,30 @@
+.Modal,
+.ModalActive {
+	position: fixed;
+	width: 350px;
+	height: fit-content;
+	right: 0;
+	top: 30px;
+
+	background-color: transparent;
+}
+
+.Modal {
+	transform: translateX(360px);
+	transition: transform 0.3s ease-in-out;
+}
+
+.ModalActive {
+	transform: translateX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.ModalContent {
+	display: block;
+
+	padding: 20px;
+	margin-right: 50px;
+
+	background-color: var(--white);
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #888;
+}

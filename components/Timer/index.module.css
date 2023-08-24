@@ -1,0 +1,15 @@
+.timer {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.time {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.timer span {
+	font-size: 1.1rem;
+	color: #525252;
+}
